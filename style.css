@@ -1,0 +1,54 @@
+*{
+    font-family: monospace;
+}
+body{
+    background-color: antiquewhite;
+}
+#board, .boardInfo{
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+#start, .boardInfo{
+    font-size: 25px;
+}
+
+#gameOver{
+    display: none;
+}
+
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: burlywood;
+    border: none;
+    color: rgb(88, 38, 7);
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: burlywood;
+}
+
+.snakeSquare {
+    background-color: rgb(188, 96, 88);
+}
+
+.foodSquare {
+    background-color: brown;
+}
