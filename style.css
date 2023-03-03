@@ -19,6 +19,7 @@ body{
 
 #gameOver{
     display: none;
+    font-size: 50px;
 }
 
 .boardInfo{
