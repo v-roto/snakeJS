@@ -152,5 +152,9 @@ const startGame = ()  => {
 }
 
 
-
+document.addEventListener('keyup', event => {
+    if (event.code === 'Space') {
+      startGame();
+    }
+  })
 startButton.addEventListener('click', startGame);

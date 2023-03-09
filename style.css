@@ -1,8 +1,12 @@
+@font-face {
+    font-family: periodico;
+    src: url(assets/EnglishTowne.ttf);
+}
 *{
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 body{
-    background-color: antiquewhite;
+    background-color: #FFEED3;
 }
 #board, .boardInfo{
     max-width: 500px;
@@ -18,8 +22,12 @@ body{
 }
 
 #gameOver{
+    font-family:periodico;
     display: none;
     font-size: 50px;
+    position:absolute;
+    left: 135px;
+    top: 200px;
 }
 
 .boardInfo{
@@ -32,12 +40,16 @@ body{
     background-color: burlywood;
     border: none;
     color: rgb(88, 38, 7);
+    font-weight: bold;
 }
 
 #scoreBoard {
     display: inline-flex;
+    font-weight: bold;
 }
-
+.punt{
+    font-weight: bold;
+}
 .square {
     aspect-ratio: 1;
 }
@@ -47,9 +59,9 @@ body{
 }
 
 .snakeSquare {
-    background-color: rgb(188, 96, 88);
+    background-color: #9FB3B0;
 }
 
 .foodSquare {
-    background-color: brown;
+    background-color: #8A191B;
 }
